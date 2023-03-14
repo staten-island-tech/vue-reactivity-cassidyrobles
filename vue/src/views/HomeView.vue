@@ -4,7 +4,12 @@
   </main>
 
   <div class="home">
-    <h1>{{ student }}</h1>
+    <h1 v-if ="graduated">{{ student }}</h1>
+    <h1 v-else>they did not yet graduate</h1>
+    <ul>
+      <li v-for="animal in animals" :key="animal">{{ animal }}</li>
+
+    </ul>
   </div>
 
 </template>
@@ -17,7 +22,8 @@ components: {},
 data(){
   return {
   student: "Harry",
-  graduated: true,
+  graduated: false,
+  animals: ["pig", "horse", "donkey", "cow", "duck",]
   };
 },
 };
@@ -42,4 +48,7 @@ the contents of router view are whatever page you are currently selecting
 scoped syling prevents the styling of a folder or app moving to other components
 {{student}} takes student from the array and uses it as an h1
 script is where js goes
-template is where html goes-->
+template is where html goes
+we can use v-if and v-else in an h1 for if else statements that log something onto the screen
+<li v-for="animal in animals" :key="animal">{{ animal }}</li>
+this code takes all animals from the animals part of the array and logs it as a list-->
