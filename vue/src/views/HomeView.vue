@@ -8,6 +8,7 @@
     <h1 v-else>they did not yet graduate</h1>
     <ul>
       <li v-for="animal in animals" :key="animal">{{ animal }}</li>
+      <!--animals.forEach((animal)=>)-->
 
     </ul>
   </div>
