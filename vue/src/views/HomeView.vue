@@ -22,6 +22,7 @@ name: "Home",
 components: {},
 data(){
   return {
+  loggedIn: true,
   student: "Harry",
   graduated: false,
   animals: ["pig", "horse", "donkey", "cow", "duck",]
