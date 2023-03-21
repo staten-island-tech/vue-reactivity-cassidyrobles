@@ -9,8 +9,10 @@
     <ul>
       <li v-for="animal in animals" :key="animal">{{ animal }}</li>
       <!--animals.forEach((animal)=>)-->
-
     </ul>
+    <button v-on:click="authState" v-if="loggedIn">Log Out</button>
+      <button v-on:click="authState" v-else>Login</button>
+      <!--authState is the function-->
   </div>
 
 </template>
@@ -22,12 +24,22 @@ name: "Home",
 components: {},
 data(){
   return {
-  loggedIn: true,
+  loggedIn: false,
   student: "Harry",
   graduated: false,
   animals: ["pig", "horse", "donkey", "cow", "duck",]
   };
 },
+methods: {
+  authState: function(){
+    if(this.loggedIn===false){
+      this.loggedIn = true;
+    } else{
+      this.loggedIn = false;
+    }
+  }
+  /*this says that if you aren't logged in then the log in button shows and if you are logged in the button won't show*/
+}
 };
 
 </script>
