@@ -10,7 +10,3 @@ app.use(router)
 
 app.mount('#app')
 
-new VueElement({
-    router,
-    render: h => h(App)
-}).$mount(`#app`)
