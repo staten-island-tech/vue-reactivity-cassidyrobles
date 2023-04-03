@@ -9,7 +9,6 @@ defineProps({
 
 <template>
   
-  
 </template>
 
 <style scoped>
