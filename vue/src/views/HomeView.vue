@@ -4,37 +4,29 @@
     <h1>ABBY NFT STORE!!!</h1>
   
     <ItemCard v-for="AbigailNFT in AbigailNFTs" :key="AbigailNFT.name" :name="AbigailNFT.name" :cost="AbigailNFT.cost" :img="AbigailNFT.img"/>
-    <div v-for="(item, index) in cartArray" :key="index" id="CartDiv"></div>
+    <h1 v-for="item in cartArray" :key="item.name" :name="item.name" :cost="item.cost" ></h1>
 
 </main>
 </template>
 
 <script>
-
+import {cartStuff} from "../stuff.js";
 import ItemCard from "../components/ItemCard.vue";
 
 export default{
 name: "Menu",
 components: {
   ItemCard,
- item,
+
 },
 methods: {
-  AddCart(item){
-     CartDiv.cartArray.push({
-     name: item.name,
-     cost: item.cost,
-     img: item.img
-     });
-     CartDiv.totalcost += item.cost;
-     console.log(item.name)
-     }
+  
 },
 data(){
  return{
+  cartStuff,
   cartArray: [
-    { 
-    },
+  
   ],
 AbigailNFTs: [ 
   {

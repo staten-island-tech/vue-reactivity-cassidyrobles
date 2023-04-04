@@ -10,8 +10,9 @@
  
  
  <script>
-
-    export default {
+import {cartStuff} from "../stuff";
+   
+export default {
         name: "ItemCard",
     props: {
         name: String,
@@ -19,19 +20,25 @@
         img: String,
     },
     methods: {
-      AddCart(item){
-     CartDiv.cartArray.push({
-     name: item.name,
-     cost: item.cost,
-     img: item.img
+      AddCart(){
+     cartStuff.cartArray.push({
+     name: this.name,
+     cost: this.cost,
+     img: this.img
      });
-     CartDiv.totalcost += item.cost;
-     console.log(item.name)
+     cartStuff.totalcost += this.cost;
+     console.log(cartStuff.totalcost)
      }
      
    }
-
+ 
  };
+ 
+ 
+ 
+ 
+
+
  </script>
  
  
