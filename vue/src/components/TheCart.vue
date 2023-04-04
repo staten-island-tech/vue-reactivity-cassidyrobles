@@ -1,8 +1,6 @@
 <template>
-    <div v-show="Abbys">
-        <h2 class="names">{{ name }}</h2>
-        <img :src="img"/>
-        <p>{{ cost }}</p>
+    <div>
+
     </div>
 </template>
 
@@ -12,6 +10,6 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

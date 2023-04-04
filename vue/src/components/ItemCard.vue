@@ -3,13 +3,14 @@
  <h2 class="name">{{ name }}</h2>
  <img class="img" :src="img"/>
  <p>${{ cost }}</p>
- <Button>add to cart</Button>
+ <button @click="AddCart">add to cart</button>
     </div>
+    <div id="CartDiv"></div>
  </template>
  
  
  <script>
- import Button from "../components/AddCart.vue"
+
     export default {
         name: "ItemCard",
     props: {
@@ -17,6 +18,19 @@
         cost: Number,
         img: String,
     },
+    methods: {
+      AddCart(item){
+     CartDiv.cartArray.push({
+     name: item.name,
+     cost: item.cost,
+     img: item.img
+     });
+     CartDiv.totalcost += item.cost;
+     console.log(item.name)
+     }
+     
+   }
+
  };
  </script>
  
