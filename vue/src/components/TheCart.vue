@@ -1,15 +1,43 @@
 <template>
-    <div>
+ 
+ <h2 class="name">{{ name }}</h2>
+ <img class="img" :src="img"/>
 
-    </div>
-</template>
+ </template>
+ 
+ 
+ <script>
 
-<script>
-    export default {
-        
-    }
-</script>
+   
+export default {
+        name: "TheCart",
+    props: {
+        name: String,
+        cost: Number,
+        img: String,
+    },
+    methods: {
+    
+     
+   }
+ 
+ };
+ 
+ 
+ 
+ 
 
-<style>
 
-</style>
+ </script>
+ 
+ 
+ <style>
+ .ItemCard{
+    text-align: center;
+    width:30%;
+    background-color: red;
+ }
+ .img{
+   width:100px;
+ }
+ </style>
