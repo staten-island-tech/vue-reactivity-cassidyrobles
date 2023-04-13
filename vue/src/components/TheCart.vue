@@ -2,13 +2,14 @@
  
  <h2 class="name">{{ name }}</h2>
  <img class="img" :src="img"/>
+ <button @click="removeCart">remove</button>
 
  </template>
  
  
  <script>
 
-   
+import {cartStuff} from "../stuff.js";
 export default {
         name: "TheCart",
     props: {
@@ -17,7 +18,10 @@ export default {
         img: String,
     },
     methods: {
-    
+    removeCart(){
+    cartStuff.cartArray.splice(this.name, 1);
+    (cartStuff.totalcost) -= (this.cost)
+    }
      
    }
  

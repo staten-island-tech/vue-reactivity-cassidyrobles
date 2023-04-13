@@ -1,11 +1,13 @@
 <template>
+  <section class="box">
     <div class="ItemCard">
  <h2 class="name">{{ name }}</h2>
  <img class="img" :src="img"/>
  <p>${{ cost }}</p>
  <button @click="AddCart">add to cart</button>
     </div>
-    <div id="CartDiv"></div>
+ 
+  </section>
  </template>
  
  
@@ -51,4 +53,19 @@ export default {
  .img{
    width:100px;
  }
+ .ItemCard{
+color:purple;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding:0px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
+  width: 33%;
+  height:350px;
+ }
+ 
  </style>

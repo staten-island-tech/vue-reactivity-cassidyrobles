@@ -2,9 +2,10 @@
   <main>
   
     <h1>ABBY NFT STORE!!!</h1>
-  
-    <ItemCard v-for="AbigailNFT in AbigailNFTs" :key="AbigailNFT.name" :name="AbigailNFT.name" :cost="AbigailNFT.cost" :img="AbigailNFT.img"/>
-    <TheCart v-for="item in cartStuff.cartArray" :key="item.name" :name="item.name"  :img="item.img"/>
+  <section class="box">
+    <ItemCard class="theCard" v-for="AbigailNFT in AbigailNFTs" :key="AbigailNFT.name" :name="AbigailNFT.name" :cost="AbigailNFT.cost" :img="AbigailNFT.img"/>
+  </section>
+    <TheCart v-for="item in cartStuff.cartArray" :key="item.name" :name="item.name"  :img="item.img" :cost="item.cost"/>
     <h3>{{ cartStuff.totalcost }}</h3>
 </main>
 </template>
@@ -102,6 +103,15 @@ AbigailNFTs: [
 </script>
 
 <style>
-
+.box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin:100px;
+  align-items: center;
+}
+.theCard{
+  
+}
 </style>
 
