@@ -45,65 +45,65 @@ AbigailNFTs: [
   {
  name: "Party Abby",
  cost: 200,
- img: "img/fafe93dc-ded1-45c0-a9c2-2a149b8a2376.jpg"
+ img: "https://i.pinimg.com/474x/d0/c6/e0/d0c6e02753a585e4124a18479ef601af.jpg"
 },
 {
  name: "Nature Abby",
  cost: 150,
- img: "img/96591d21-8690-4f6e-857b-c0796c0a48f4.jpg"
+ img: "https://i.pinimg.com/474x/58/de/79/58de7919c9e9c482fdd0d47bbf789075.jpg"
 },
 {
  name: "Tired Abby",
  cost: 50,
- img: "img/IMG_7614 (1).JPG"
+ img: "https://i.pinimg.com/474x/38/e1/0f/38e10f1cf0027cab6ae2d6b91ee07415.jpg"
 },
 {
  name: "Default Abby",
  cost: 100,
- img: "img/IMG_8304.JPG"
+ img: "https://i.pinimg.com/474x/eb/3e/c8/eb3ec8968ce3be4f538421b79ff361fe.jpg"
 },{
  name: "English Abby",
  cost: 125,
- img: "img/IMG_8989.PNG"
+ img: "https://i.pinimg.com/474x/f9/d0/f9/f9d0f9f79b2f38d365d7616bd3fdda7a.jpg"
 },
 {
  name: "CompSci Abby",
  cost: 300,
- img: "img/IMG_6711.JPG"
+ img: "https://i.pinimg.com/474x/62/31/4d/62314db574568aab31d81d974936a725.jpg"
 },{
  name: "Defeated Abby",
  cost: 10,
- img: "img/IMG_8990.PNG"
+ img: "https://i.pinimg.com/474x/df/a4/51/dfa451aa7a4bacd799d75ae766111f1b.jpg"
 },
 {
  name: "Cass & Abby",
  cost: 400,
- img: "img/IMG_8971.JPG"
+ img: "https://i.pinimg.com/474x/90/89/8e/90898e18c58b754bcf771a12875e19b2.jpg"
 },
 {
  name: "BDAY Abby",
  cost: 400,
- img: "img/IMG_7667.JPG"
+ img: "https://i.pinimg.com/474x/c2/55/66/c2556604b9bbfa2ca3d6d8f9e4e4d9fc.jpg"
 },
 {
  name: "Laughing Abby",
  cost: 300,
- img: "img/IMG_8947.JPG"
+ img: "https://i.pinimg.com/474x/fb/54/1a/fb541af2bc34f895c569e2e62eb63ac6.jpg"
 },
 {
  name: "Shocked Abby",
  cost: 150,
- img: "img/IMG_8476.JPG"
+ img: "https://i.pinimg.com/474x/18/f4/4d/18f44d6a87cde642ab308fd338716f5d.jpg"
 },
 {
  name: "Super Abby",
  cost: 700,
- img: "img/IMG_8991.PNG"
+ img: "https://i.pinimg.com/474x/22/82/47/228247972b46881e22749384ac1b8431.jpg"
 },
 {
  name: "Judge Abby",
  cost: 200,
- img: "img/IMG_8517.JPG"
+ img: "https://i.pinimg.com/474x/d7/02/f1/d702f180c74fe7a6a6f134dedd80b843.jpg"
 },
 
 
