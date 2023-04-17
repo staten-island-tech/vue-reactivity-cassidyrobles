@@ -1,10 +1,10 @@
 <template>
   <section class="box">
-    <div class="ItemCard">
- <h2 class="name">{{ name }}</h2>
- <img class="img" :src="img"/>
- <p>${{ cost }}</p>
- <button @click="AddCart">add to cart</button>
+    <div class="theCard">
+ <h2 class="cardname">{{ name }}</h2>
+ <img class="imag" :src="img"/>
+ <p class="ParagraphText">${{ cost }}</p>
+ <button class="addToCartButton" @click="AddCart">add to cart</button>
     </div>
  
   </section>
@@ -45,17 +45,24 @@ export default {
  
  
  <style>
- .ItemCard{
-    text-align: center;
-    width:30%;
-    background-color: red;
+
+ .imag{
+  width:150px;
+  border-radius: 20px;
+  border: 5px solid white;
  }
- .img{
-   width:100px;
+
+ .box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin:100px;
+  align-items: center;
+ 
+  
  }
- .ItemCard{
-color:purple;
-display: flex;
+ .theCard{
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
@@ -63,9 +70,21 @@ display: flex;
   border-radius: 20px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.5);
-  width: 33%;
-  height:350px;
+  background-color:red;
+  width: 30%;
+  height:620px;
  }
- 
+ .addToCartButton{
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 22px;
+  position: relative;
+
+ }
+.cardname{
+  font-size: 30px;
+}
+.ParagraphText{
+  font-size: 30px;
+}
  </style>
